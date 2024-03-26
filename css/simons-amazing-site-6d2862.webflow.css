@@ -1,0 +1,253 @@
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: underline;
+  transition: color .2s;
+}
+
+.d--100 {
+  color: #000;
+  letter-spacing: -.025em;
+  font-family: "P 22 Mackinacprobook Webfont", Georgia, sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.d--30 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.body {
+  color: #fff;
+  background-color: #fff7db;
+  font-family: neue-haas-grotesk-text;
+  font-weight: 400;
+}
+
+.p--30 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cs-page-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(196deg, rgba(0, 0, 0, 0) 60%, #fff7db 85%), url('../images/Christina.jpg');
+  background-position: 0 0, 100%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, contain;
+  padding: 2rem;
+}
+
+.cs-col {
+  width: 50%;
+}
+
+.cs-col.is--right {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.cs-row {
+  height: 100%;
+  flex-flow: column;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+}
+
+.cs-logo {
+  z-index: 1;
+  max-width: 92px;
+  letter-spacing: -.02em;
+  margin-bottom: 5rem;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: .9;
+  position: relative;
+}
+
+.cs-contact-list {
+  z-index: 1;
+  margin-bottom: 5rem;
+  display: flex;
+  position: relative;
+}
+
+.cs-contact-list-item {
+  width: 50%;
+}
+
+.cs-description {
+  z-index: 2;
+  width: 100%;
+  max-width: 17rem;
+  position: relative;
+}
+
+.cs-page-title {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.cs-page-title-wrap {
+  max-width: 45rem;
+}
+
+.image {
+  width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .d--100 {
+    text-transform: none;
+  }
+
+  .link {
+    transition: opacity .2s, color .2s;
+  }
+
+  .link:hover {
+    opacity: .6;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .d--100 {
+    letter-spacing: -.02em;
+    font-size: 5.75rem;
+    line-height: 1.05;
+  }
+
+  .body {
+    font-size: 14px;
+  }
+
+  .cs-page-title-wrap {
+    max-width: 52rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .d--100 {
+    font-size: 4rem;
+  }
+
+  .cs-page-wrapper {
+    padding: 1.75rem;
+  }
+
+  .cs-col {
+    width: 100%;
+  }
+
+  .cs-col.is--right {
+    flex-direction: column-reverse;
+  }
+
+  .cs-row {
+    flex-direction: column;
+  }
+
+  .cs-logo {
+    margin-bottom: 0;
+  }
+
+  .cs-contact-list {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+
+  .cs-description {
+    max-width: 24rem;
+  }
+
+  .cs-page-title {
+    display: block;
+    position: static;
+  }
+
+  .cs-page-title-wrap {
+    max-width: 37rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .d--100 {
+    letter-spacing: -.01em;
+    font-size: 3.25rem;
+  }
+
+  .cs-page-wrapper {
+    height: auto;
+    min-height: 100vh;
+    padding: 1.5rem 1.5rem 3rem;
+  }
+
+  .cs-logo {
+    margin-bottom: 5rem;
+  }
+
+  .cs-contact-list {
+    flex-direction: column;
+    margin-top: 1.5rem;
+    display: block;
+  }
+
+  .cs-contact-list-item {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .cs-contact-list-item.is--last {
+    margin-bottom: 0;
+  }
+
+  .cs-description {
+    margin-top: 6rem;
+  }
+
+  .cs-page-title-wrap {
+    padding-right: 0;
+  }
+}
+
+
+@font-face {
+  font-family: 'P 22 Mackinacprobook Webfont';
+  src: url('../fonts/P22MackinacProBook-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
